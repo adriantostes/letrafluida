@@ -1,0 +1,65 @@
+const fs = require('fs');
+const targetFile = 'c:\\My Web Sites\\letrafluidacopy\\letrafluida.com.br\\assets\\index-BY5pObJn.js';
+
+try {
+    let content = fs.readFileSync(targetFile, 'utf8');
+
+    // === DEFINIÇÃO DA NOVA LISTA PREMIUM (ITEMS) ===
+    const checkIcon = `e.jsx("div", { className: "w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5", children: e.jsx(l, { className: "text-blue-600 w-4 h-4", strokeWidth: 3 }) })`;
+
+    const msg1 = `e.jsxs("li", { className: "flex gap-4 items-start text-gray-700", children: [${checkIcon}, e.jsx("span", { className: "font-bold text-gray-800", children: "Tudo do Pacote Básico" })] })`;
+    const msg2 = `e.jsxs("li", { className: "flex gap-4 items-start text-gray-700", children: [${checkIcon}, e.jsx("span", { className: "font-bold text-gray-800", children: "O Método Letra Fluida (Completo)" })] })`;
+    const msg3 = `e.jsxs("li", { className: "flex gap-4 items-start text-gray-700", children: [${checkIcon}, e.jsx("span", { className: "text-base text-gray-800", children: "Módulo 1: O Alfabeto Executivo" })] })`;
+    const msg4 = `e.jsxs("li", { className: "flex gap-4 items-start text-gray-700", children: [${checkIcon}, e.jsx("span", { className: "text-base text-gray-800", children: "Módulo 2: Técnicas de Ligações e Fluidez" })] })`;
+    const masterclassCard = `e.jsxs("li", { className: "flex gap-4 items-center bg-[#FEFCE8] p-3 rounded-md border border-yellow-300 shadow-sm -mx-2", children: [e.jsx("div", { className: "w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center shrink-0 text-white shadow-inner", children: e.jsx("span", { className: "text-sm", children: "🔥" }) }), e.jsx("span", { className: "text-sm font-black text-[#1e293b] uppercase tracking-wide leading-tight", children: "MASTERCLASS: A ASSINATURA DE UM CEO" })] })`;
+    const msg5 = `e.jsxs("li", { className: "flex gap-4 items-start text-gray-700", children: [${checkIcon}, e.jsx("span", { className: "text-base text-gray-800", children: "Protocolo Biomecânico (Fim da Tensão)" })] })`;
+    const msg6 = `e.jsxs("li", { className: "flex gap-4 items-start text-gray-700", children: [${checkIcon}, e.jsx("span", { className: "text-base text-gray-800", children: "Caderno de Treino Diário (Para Imprimir)" })] })`;
+    const appIaCard = `e.jsxs("li", { className: "flex gap-4 items-center bg-[#FEFCE8] p-3 rounded-md border border-yellow-300 shadow-sm -mx-2", children: [e.jsx("div", { className: "w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center shrink-0 text-white shadow-inner", children: e.jsx("span", { className: "text-xl", children: "🤖" }) }), e.jsxs("div", { className: "flex flex-col", children: [e.jsx("span", { className: "text-[10px] uppercase font-bold text-[#8A7350] tracking-widest leading-none mb-0.5", children: "LANÇAMENTO" }), e.jsx("span", { className: "text-sm font-black text-[#1e293b] leading-tight", children: "App Corretor IA (Acesso Vitalício)" })] })] })`;
+    const msg7 = `e.jsxs("li", { className: "flex gap-4 items-start text-gray-700", children: [${checkIcon}, e.jsx("span", { className: "text-base text-gray-800", children: "Guia Anti-Tensão (Soltar a mão)" })] })`;
+    const msg8 = `e.jsxs("li", { className: "flex gap-4 items-start text-gray-700", children: [${checkIcon}, e.jsx("span", { className: "text-base text-gray-800", children: "Biblioteca de Estilos (9 Tipos de Letras)" })] })`;
+    const msg9 = `e.jsxs("li", { className: "flex gap-4 items-start text-gray-700", children: [${checkIcon}, e.jsx("span", { className: "text-base text-gray-800", children: "Guia de Canetas & Papéis Premium" })] })`;
+    const letteringCard = `e.jsxs("li", { className: "flex gap-4 items-center bg-[#FEFCE8] p-3 rounded-md border border-yellow-300 shadow-sm -mx-2", children: [e.jsx("div", { className: "w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center shrink-0 text-white shadow-inner", children: e.jsx(te, { size: 16, className: "text-white fill-white" }) }), e.jsx("span", { className: "text-sm font-black text-[#1e293b] uppercase tracking-wide leading-tight", children: "BÔNUS: CALIGRAFIA ARTÍSTICA & LETTERING" })] })`;
+    const exclusiveCard = `e.jsxs("li", { className: "flex gap-4 items-center bg-[#FEFCE8] p-3 rounded-md border border-yellow-300 shadow-sm -mx-2", children: [e.jsx("div", { className: "w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center shrink-0 text-white shadow-inner", children: e.jsx("span", { className: "text-sm", children: "💎" }) }), e.jsxs("div", { className: "flex flex-col", children: [e.jsx("span", { className: "text-sm font-black text-[#1e293b] uppercase tracking-wide leading-tight", children: "BÔNUS EXCLUSIVO:" }), e.jsx("span", { className: "text-xs font-medium text-[#1e293b] leading-tight", children: "Benefício Exclusivo: Acesso vitalício! + Atualizações mensais" })] })] })`;
+
+    const newPremiumListContent = [msg1, msg2, msg3, msg4, masterclassCard, msg5, msg6, appIaCard, msg7, msg8, msg9, letteringCard, exclusiveCard].join(', ');
+
+    // Lista completa atualizada para a Seção Principal
+    const newPremiumUlBlock = `e.jsxs("ul", { className: "space-y-4", children: [${newPremiumListContent}] })`;
+
+    // Header para corrigir o Footer Básico
+    const footerBasicHeader = `e.jsxs("ul", { className: "space-y-3 mb-8", children: [`;
+
+
+    // === 1. CORRIGIR FOOTER BÁSICO (Remover Lixo) ===
+    // Alvo: Lista 'space-y-3 mb-8' que contém "BÔNUS EXCLUSIVO" (minha injeção errada)
+    // Vai até a vírgula antes de "Combo +300" (itens originais que ficaram órfãos)
+
+    const footerCleanupRegex = /e\.jsxs\("ul",\s*\{\s*className:\s*"space-y-3 mb-8"[\s\S]*?BÔNUS EXCLUSIVO[\s\S]*?,(?=\s*e\.jsxs\("li",\s*\{\s*className:\s*"[^"]*text-gray-600.*Combo \+300)/;
+
+    if (footerCleanupRegex.test(content)) {
+        content = content.replace(footerCleanupRegex, footerBasicHeader);
+        console.log('[OK] Footer Básico corrigido (Lixo removido, estrutura restaurada).');
+    } else {
+        console.log('[INFO] Footer Básico parece limpo ou não encontrado.');
+    }
+
+
+    // === 2. ATUALIZAR LISTA PREMIUM PRINCIPAL (Forçar Atualização) ===
+    // Alvo: Lista 'space-y-4' que fica antes do botão com 'onClick: j' (Botão Premium Principal)
+    // Substitui todo o bloco UL pelo novo bloco atualizado.
+
+    const mainPremiumRegex = /e\.jsxs\("ul",\s*\{\s*className:\s*"space-y-4"[\s\S]*?(?=,\s*e\.jsxs\("button",\s*\{\s*onClick:\s*j)/;
+
+    if (mainPremiumRegex.test(content)) {
+        // Verifica se já tem o Robot (para não substituir à toa, mas força para garantir ordem)
+        content = content.replace(mainPremiumRegex, newPremiumUlBlock);
+        console.log('[OK] Lista Premium Principal atualizada com sucesso.');
+    } else {
+        console.warn('[WARN] Lista Premium Principal (space-y-4) não encontrada antes do botão J. Verifique se o botão mudou.');
+    }
+
+    fs.writeFileSync(targetFile, content, 'utf8');
+
+} catch (err) {
+    console.error('Erro Fatal:', err);
+}

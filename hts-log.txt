@@ -1,0 +1,31 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 22 Jan 2026 16:37:03 at https://letrafluida.com.br/#promocao +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://letrafluida.com.br/#promocao -O1 "C:\My Web Sites\letrafluidacopy" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:37:14	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link primary/robots.txt (from primary/primary)
+16:37:14	Warning: 	Retry after error -5 (Unable to get server's address: Este host não é conhecido. ) at link primary/promocao (from primary/primary)
+16:37:25	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link primary/promocao (from primary/primary)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/signals/config/ (from https://connect.facebook.net/en_US/fbevents.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/t (from https://connect.facebook.net/en_US/fbevents.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/e (from https://connect.facebook.net/en_US/fbevents.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/signals/plugins/ (from https://connect.facebook.net/en_US/fbevents.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/schema.org/ (from https://connect.facebook.net/en_US/fbevents.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/t.resolvedLink (from https://connect.facebook.net/en_US/fbevents.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/o (from https://connect.facebook.net/en_US/fbevents.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/signals/iwl.js (from https://connect.facebook.net/en_US/fbevents.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/signals/iwl.js?pixel_id= (from https://connect.facebook.net/en_US/fbevents.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/r.dl (from https://connect.facebook.net/en_US/fbevents.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/r.rl (from https://connect.facebook.net/en_US/fbevents.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/s (from https://letrafluida.com.br/assets/index-BY5pObJn.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/n (from https://letrafluida.com.br/assets/index-BY5pObJn.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/$&/ (from https://letrafluida.com.br/assets/react-vendor-Dm3sLKa6.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/applewebkit/ (from https://letrafluida.com.br/assets/react-vendor-Dm3sLKa6.js)
+16:37:28	Error: 	"Not Found" (404) at link https://letrafluida.com.br/chrome/ (from https://letrafluida.com.br/assets/react-vendor-Dm3sLKa6.js)
+16:37:28	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link primary/promocao (from primary/primary)
+
+HTTrack Website Copier/3.49-2 mirror complete in 25 seconds : 52 links scanned, 31 files written (5158123 bytes overall) [4641104 bytes received at 185644 bytes/sec], 870411 bytes transferred using HTTP compression in 25 files, ratio 29%, 5.3 requests per connection
+(18 errors, 2 warnings, 0 messages)
